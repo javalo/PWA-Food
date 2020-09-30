@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Javalo</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <Link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FFE1C4">
+</head>
+<body class="grey lighten-4">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">Food<span>Javalo</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">FOODJAVALO</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>Contact</a>
+    </li>
+  </ul>
+
+  <!-- recipes -->
+  <div class="recipes container grey-text text-darken-1">
+    <div class="card-panel recipe white row">
+      <img src="/img/pizza.jpeg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Milan Pizza</div>
+        <div class="recipe-ingredients">Soy oil, salt, yeast, corn syrup solids, sodium, mono and diglycerides, potassium bromate and enzymes</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+
+    <div class="card-panel recipe white row">
+      <img src="/img/pancakes.png" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Pancakes</div>
+        <div class="recipe-ingredients">Mix flour, baking powder, salt, sugar, milk, eggs, and oil</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+
+
+    
+
+    <div class="card-panel recipe white row">
+      <img src="/img/chicken.png" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Fried Chicken</div>
+        <div class="recipe-ingredients">Flour, garlic salt, 1 tablespoon black pepper, paprika and poultry seasoning</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+
+
+    <div class="card-panel recipe white row">
+      <img src="/img/meat.png" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Meat</div>
+        <div class="recipe-ingredients">Garlic oil, Onion, and seasoning</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+
+
+    <div class="card-panel recipe white row">
+      <img src="/img/salade.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Spinach Salad</div>
+        <div class="recipe-ingredients">Fresh spinach with tomato, feta cheese, and black olives.</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="/img/dinner.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Anti Pasto Salad</div>
+        <div class="recipe-ingredients">A fresh garden salad with salami, pepperoni, ham, and mozzarella.</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="/img/Hamburger.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Hamburger</div>
+        <div class="recipe-ingredients">Ground beef, onion, cheese, soy sauce, Worcestershire sauce, egg, onion soup mix, garlic, garlic powder, parsley, basil, oregano, rosemary, salt, and pepper</div>
+      </div>
+      <div class="recipe-delete">
+        <i class="material-icons">delete_outline</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="center">
+    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- add recipe side nav -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-recipe container section">
+      <h6 >New Recipe</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="e.g. Javalo soup" id="title" type="text" class="validate">
+        <label for="title">Recipe Title</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+        <label for="ingredients">Ingredients</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/js/ui.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
